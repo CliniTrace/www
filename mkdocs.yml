@@ -1,0 +1,57 @@
+site_name: CliniTrace
+site_description: Doctor-led AI visual triage & longitudinal monitoring — documentation, investor materials, and outreach kit.
+site_url: https://YOUR-ORG.github.io/clinitrace/
+repo_url: https://github.com/YOUR-ORG/clinitrace
+repo_name: YOUR-ORG/clinitrace
+
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/white-balance-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - toc:
+      permalink: true
+  - tables
+  - attr_list
+  - def_list
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.highlight
+
+plugins:
+  - search
+
+nav:
+  - Home: index.md
+  - Documentation Library: docs-library.md
+  - Business & Investor:
+      - Investor Proposal: investor-proposal.md
+      - White Paper: whitepaper.md
+      - Project Plan: project-plan.md
+      - MVP Outline: mvp-outline.md
+      - Team Roles: team-roles.md
+  - Clinical Adoption:
+      - ToC & Clinical Buy-In: toc-clinical-adoption.md
+      - Governance & Safety: governance-safety.md
+      - Privacy & Security: privacy-security.md
+  - Funding & Growth:
+      - Funding Paths: funding.md
+      - Media & Outreach: media-outreach.md
+  - FAQ: faq.md
